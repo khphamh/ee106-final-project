@@ -1,0 +1,6 @@
+<launch>
+  <node name="sawyer_head" pkg="rostopic" type="rostopic" respawn="false" output="screen" args="pub /robot/head/command_head_pan intera_core_msgs/HeadPanCommand '{target: 0, speed_ratio: 1, pan_mode: 1}' -1" />
+
+  <node name="go_to_cartesian_pose_py" pkg="move_arm" type="go_to_cartesian_pose.py" respawn="false" output="screen" args="-p 0.34 0.410 -0.079 -o -0.004 0.686 0.088 0.723" />
+
+</launch>

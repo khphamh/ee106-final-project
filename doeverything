@@ -1,0 +1,20 @@
+#!/bin/bash
+
+roslaunch move_arm sawyer_tuck.launch
+roslaunch move_arm grip_open.launch
+roslaunch move_arm go_to_drop_dice.launch
+roslaunch move_arm go_to_cup.launch
+roslaunch move_arm grip_close.launch
+roslaunch move_arm move_up.launch
+roslaunch move_arm rotate_cup.launch
+roslaunch move_arm go_to_drop_dice.launch
+roslaunch move_arm go_to_cup.launch
+roslaunch move_arm grip_open.launch
+roslaunch move_arm go_to_drop_dice.launch
+roslaunch move_arm sawyer_tuck.launch
+roslaunch move_arm controller.launch
+roslaunch move_arm grip_close.launch
+roslaunch move_arm go_to_drop_dice.launch
+roslaunch move_arm grip_open.launch
+PID=$!
+kill $PID
