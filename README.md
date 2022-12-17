@@ -81,7 +81,7 @@ To pick up the dice, we use a controller.
 In the end we completed our project so that it could play a dice game with a singular dice. It is successful with rolling the dice and identifying the dice numbers
 
 ![Working Project! ](/imgs/demo.gif)
-![Working Project! ](/imgs/demo2.gif)
+![Working Project2! ](/imgs/demo2.gif)
 
 ## Conclusion 
 Our results met our design criteria very well! We were able to play with a single dice, but so the dice game needed to be simplified. A future project could be working on a version that simply looks at the dice and picks them up, without using checkpoints. Also, deciding on which dice to pick up first could also be a possible factor as well. Regardless, our solution met our design criteria of being able to use computer vision to allow the robot to identify, locate, and pick up a dice and place in a container. 
