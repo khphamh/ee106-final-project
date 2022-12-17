@@ -16,6 +16,11 @@ The way we approached the problem was very unique and that that approach can be 
 ## Design: 
 ### What design criteria must your project meet? What is the desired functionality? 
 - **Computer Vision**: to read, recognize, and locate the dice
+	![Normal black and white picture of dice](/imgs/1.jpeg)
+	![Gaussian Blurred picture of dice to reduce noise](/imgs/2.jpeg)
+	![Opencv's contour to find the dice](/imgs/3.jpeg)
+	![Creating boxes around the dice](/imgs/4.jpeg)
+	![Dice counting](/imgs/5.jpeg)
 - **Consistency:** since we plan on making a game, we want to be able to have consistent success so we made checkpoints that happen along the problem to ensure we're on the right path. 
 
 ### What design choices did you make when you formulated your design? What trade-offs did you have to make?
@@ -24,3 +29,13 @@ Tradeoffs:
     - 
     - 
 **Robot(s)**: We at fist were ambitious and wanted to use multiple robots, but we found it easier to just use a single robot to simulate a full game. Though it adds to the entertainment aspect, but could be a possible project for the future.
+
+## Implementation
+### Describe any hardware you used or built. Illustrate with pictures and diagrams. • What parts did you use to build your solution? 
+
+We used a sawyer with the default gripper. For rolling the dice we 3D printed a container. 	![cup we 3d printed](/imgs/cup.jpeg)
+
+
+
+
+
