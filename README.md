@@ -20,11 +20,11 @@ The way we approached the problem was very unique and that that approach can be 
 
 ## Design: 
 ### What design criteria must your project meet? What is the desired functionality? 
-- ** Computer Vision **: to read, recognize, and locate the dice
-- ** Consistency: ** since we plan on making a game, we want to be able to have consistent success so we made checkpoints that happen along the problem to ensure we're on the right path. 
+- **Computer Vision**: to read, recognize, and locate the dice
+- **Consistency:** since we plan on making a game, we want to be able to have consistent success so we made checkpoints that happen along the problem to ensure we're on the right path. 
 
 ### What design choices did you make when you formulated your design? What trade-offs did you have to make?
-** Path Finding **: We created our own path finding solution, by moving closer and closer to the dice to create a checkpoint where we can then pick up the dice. 
+**Path Finding**: We created our own path finding solution, by moving closer and closer to the dice to create a checkpoint where we can then pick up the dice. 
 Tradeoffs: 
     - TODO: THIS
     - 
@@ -81,6 +81,7 @@ To pick up the dice, we use a controller.
 In the end we completed our project so that it could play a dice game with a singular dice. It is successful with rolling the dice and identifying the dice numbers
 
 ![Working Project! ](/imgs/demo.gif)
+![Working Project2! ](/imgs/demo2.gif)
 
 ## Conclusion 
 Our results met our design criteria very well! We were able to play with a single dice, but so the dice game needed to be simplified. A future project could be working on a version that simply looks at the dice and picks them up, without using checkpoints. Also, deciding on which dice to pick up first could also be a possible factor as well. Regardless, our solution met our design criteria of being able to use computer vision to allow the robot to identify, locate, and pick up a dice and place in a container. 
