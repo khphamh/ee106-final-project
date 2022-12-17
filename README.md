@@ -31,7 +31,6 @@ Tradeoffs:
 **Robot(s)**: We at fist were ambitious and wanted to use multiple robots, but we found it easier to just use a single robot to simulate a full game. Though it adds to the entertainment aspect, but could be a possible project for the future.
 
 ## Implementation
-### Describe any hardware you used or built. Illustrate with pictures and diagrams. • What parts did you use to build your solution? 
 
 We used a sawyer with the default gripper. For rolling the dice we 3D printed a container. 	![cup we 3d printed](/imgs/cup.jpeg)
 
@@ -64,12 +63,31 @@ We used a sawyer with the default gripper. For rolling the dice we 3D printed a 
 
 ![Dice counting](/imgs/5.jpeg)
 
-
-**Picking up the dice**:
+### Picking up the dice:
 
 The high level overview of our project works like the following. From a fixed starting position, a container with a dice is picked up. The rolling motion is a preset set of instructions. Then the robot moves so that the rolled dice is in frame. It takes a few seconds to read the dice and locate the dice. Then it determines its location and picks up the dice
 
 To pick up the dice, we use a controller. 
+
+### Camera Position Controller
+![Camera Position Controller Diagram](/imgs/diagram.png)
+
+Sudo code for how this would work: 
+```
+# Get an intial read
+image_center = get_img()
+dice_pos = get_dice_pos()
+error = dice_pos - image_center # In (x, y)
+
+# move the camera, then get another read and update the error
+while error not within a threshold: 
+	move_camera(error)
+	dice_pos = get_dice_pos()
+	image_center = get_img()
+	error = dice_pos - image_center # In (x, y)
+
+	
+```
 - We got the bot to get the dice into the center of the frame, and record it’s x and y position
 - Look at the error of where the dice is and the center of the image, and that tells us how much to adjust in order to center the dice in the middle
 - We do this via x and y positions relative to the camera, and we maintain a constant height
