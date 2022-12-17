@@ -20,11 +20,11 @@ The way we approached the problem was very unique and that that approach can be 
 
 ## Design: 
 ### What design criteria must your project meet? What is the desired functionality? 
-- ** Computer Vision **: to read, recognize, and locate the dice
-- ** Consistency: ** since we plan on making a game, we want to be able to have consistent success so we made checkpoints that happen along the problem to ensure we're on the right path. 
+- **Computer Vision**: to read, recognize, and locate the dice
+- **Consistency:** since we plan on making a game, we want to be able to have consistent success so we made checkpoints that happen along the problem to ensure we're on the right path. 
 
 ### What design choices did you make when you formulated your design? What trade-offs did you have to make?
-** Path Finding **: We created our own path finding solution, by moving closer and closer to the dice to create a checkpoint where we can then pick up the dice. 
+**Path Finding**: We created our own path finding solution, by moving closer and closer to the dice to create a checkpoint where we can then pick up the dice. 
 Tradeoffs: 
     - TODO: THIS
     - 
