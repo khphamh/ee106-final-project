@@ -123,7 +123,16 @@ Our implementation uses checkpoints which are configurations for the sawyer bot 
 	- With some manipulation and standardized pick up actions, a more complex game could be created! This could possibly allow for virtual gaming tournaments with real pieces moving, an interactive dungeons and dragons session, and possibly could empower people with movement disabilities and give them a way to independently play games with others. 
 
 
-	
+## Team
+Adan Lopez Calderon - 4th year studying EECS
+Noe Trejo-Cruz - 4th year studying EECS 
+Khanh Pham - 
+Angela Gao - 3rd year studying EECS and business. 
 
 
+### Contributions: 
+Adan Lopez Calderon - 
+Noe Trejo-Cruz - 
+Khanh Pham - 
+Angela Gao - 
 
