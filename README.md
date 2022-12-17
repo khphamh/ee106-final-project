@@ -11,3 +11,16 @@ We set up a configuration that is ready to pick up a dice, so the sawyer bot is 
 
 ### In what real-world robotics applications could the work from your project be useful?
 The way we approached the problem was very unique and that that approach can be used in other applications. Instead of translating to cartesian coordinates using relativity makes the problem a lot more simple, so we stuck to the robot’s frame, rather than the world frame since it made the problem a lot more simple. 
+
+
+## Design: 
+### What design criteria must your project meet? What is the desired functionality? 
+- **Computer Vision**: to read, recognize, and locate the dice
+- **Consistency:** since we plan on making a game, we want to be able to have consistent success so we made checkpoints that happen along the problem to ensure we're on the right path. 
+
+### What design choices did you make when you formulated your design? What trade-offs did you have to make?
+**Path Finding**: We created our own path finding solution, by moving closer and closer to the dice to create a checkpoint where we can then pick up the dice. 
+Tradeoffs: 
+    - 
+    - 
+**Robot(s)**: We at fist were ambitious and wanted to use multiple robots, but we found it easier to just use a single robot to simulate a full game. Though it adds to the entertainment aspect, but could be a possible project for the future.
