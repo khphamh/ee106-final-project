@@ -15,16 +15,11 @@ The way we approached the problem was very unique and that that approach can be 
 
 ## Design: 
 ### What design criteria must your project meet? What is the desired functionality? 
-- **Computer Vision**: to read, recognize, and locate the dice
-	![Normal black and white picture of dice](/imgs/1.jpeg)
-	![Gaussian Blurred picture of dice to reduce noise](/imgs/2.jpeg)
-	![Opencv's contour to find the dice](/imgs/3.jpeg)
-	![Creating boxes around the dice](/imgs/4.jpeg)
-	![Dice counting](/imgs/5.jpeg)
-- **Consistency:** since we plan on making a game, we want to be able to have consistent success so we made checkpoints that happen along the problem to ensure we're on the right path. 
+- ** Computer Vision **: to read, recognize, and locate the dice
+- ** Consistency: ** since we plan on making a game, we want to be able to have consistent success so we made checkpoints that happen along the problem to ensure we're on the right path. 
 
 ### What design choices did you make when you formulated your design? What trade-offs did you have to make?
-**Path Finding**: We created our own path finding solution, by moving closer and closer to the dice to create a checkpoint where we can then pick up the dice. 
+** Path Finding **: We created our own path finding solution, by moving closer and closer to the dice to create a checkpoint where we can then pick up the dice. 
 Tradeoffs: 
     - 
     - 
@@ -36,6 +31,41 @@ Tradeoffs:
 We used a sawyer with the default gripper. For rolling the dice we 3D printed a container. 	![cup we 3d printed](/imgs/cup.jpeg)
 
 
+### Describe any software you wrote in detail. Illustrate with diagrams, flow charts, and/or other appropriate visuals. This includes launch files, URDFs, etc. 
+** Reading the dice **:
+- We started with using concepts of Lab 6 to read dice numbers on still images
+- OpenCV functions to find the dice and count circular blobs
+- Outputs a number to add to total count
+- Started to use camera to capture images to be processed
 
+#### How it works: 
+0. A picture is taken from the video stream
+	![Normal black and white picture of dice](/imgs/1.jpeg)
+1. We first apply a background remover using a threshold number. Then blur it to remove noise.
+	![Gaussian Blurred picture of dice to reduce noise](/imgs/2.jpeg)
+2. Then we use [] to identify the clusters
+	![Opencv's contour to find the dice](/imgs/3.jpeg)
+3. From the clusters we apply a box identifier, with a threshold of how large it can be to eliminate the frame rectangle.
+	![Creating boxes around the dice](/imgs/4.jpeg)
+4. After individual dice are identified a snapshot of each dice is taken. Then zoomed in to have more accurate counts of the dice
+	![Dice counting](/imgs/5.jpeg)
+
+
+** Picking up the dice **:
+
+The high level overview of our project works like the following. From a fixed starting position, a container with a dice is picked up. The rolling motion is a preset set of instructions. Then the robot moves so that the rolled dice is in frame. It takes a few seconds to read the dice and locate the dice. Then it determines its location and picks up the dice
+
+To pick up the dice, we use a controller. 
+- We got the bot to get the dice into the center of the frame, and record it’s x and y position
+- Look at the error of where the dice is and the center of the image, and that tells us how much to adjust in order to center the dice in the middle
+- We do this via x and y positions relative to the camera, and we maintain a constant height
+- Once we got that, we use that position to tell it where to grab with a constant offset from the camera position
+
+## Results
+
+### How did it end up? 
+In the end we completed our project so that it could play a dice game with a singular dice. It is successful with rolling the dice and identifying the dice numbers
+
+![Two Birds playing](/imgs/demo.gif)
 
 
