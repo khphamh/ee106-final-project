@@ -124,10 +124,10 @@ Our implementation uses checkpoints which are configurations for the sawyer bot 
 
 
 ## Team
-Adan Lopez Calderon - 4th year studying EECS
-Noe Trejo-Cruz - 4th year studying EECS 
-Khanh Pham - 
-Angela Gao - 3rd year studying EECS and business. 
+Adan Lopez Calderon: 4th year studying EECS
+Noe Trejo-Cruz: 4th year studying EECS 
+Khanh Pham: 
+Angela Gao: 3rd year studying EECS and business. 
 
 
 ### Contributions: 
