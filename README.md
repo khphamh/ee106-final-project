@@ -33,7 +33,7 @@ Tradeoffs:
 ## Implementation
 ### Describe any hardware you used or built. Illustrate with pictures and diagrams. • What parts did you use to build your solution? 
 
-We used a sawyer with the default gripper. For rolling the dice we 3D printed a container. 	![cup we 3d printed](/imgs/cup.jpg)
+We used a sawyer with the default gripper. For rolling the dice we 3D printed a container. 	![cup we 3d printed](/imgs/cup.jpeg)
 
 
 
