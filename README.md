@@ -37,7 +37,7 @@ We used a sawyer with the default gripper. For rolling the dice we 3D printed a 
 
 
 ### Describe any software you wrote in detail. Illustrate with diagrams, flow charts, and/or other appropriate visuals. This includes launch files, URDFs, etc. 
-** Reading the dice **:
+**Reading the dice**:
 - We started with using concepts of Lab 6 to read dice numbers on still images
 - OpenCV functions to find the dice and count circular blobs
 - Outputs a number to add to total count
@@ -65,7 +65,7 @@ We used a sawyer with the default gripper. For rolling the dice we 3D printed a 
 ![Dice counting](/imgs/5.jpeg)
 
 
-** Picking up the dice **:
+**Picking up the dice**:
 
 The high level overview of our project works like the following. From a fixed starting position, a container with a dice is picked up. The rolling motion is a preset set of instructions. Then the robot moves so that the rolled dice is in frame. It takes a few seconds to read the dice and locate the dice. Then it determines its location and picks up the dice
 
