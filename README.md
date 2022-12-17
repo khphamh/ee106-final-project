@@ -65,7 +65,7 @@ We used a Sawyer with the default gripper. For rolling the dice we 3D printed a 
 
 ### Picking up the dice:
 
-The high level overview of our project works like the following. From a fixed starting position, a container with a dice is picked up. The rolling motion is a preset set of instructions. Then the robot moves so that the rolled dice is in frame. It takes a few seconds to read the dice and locate the dice. Then it determines its location and picks up the dice
+The high level overview of our project works like the following. From a fixed starting position, a container with a dice is picked up. The rolling motion is a preset set of instructions, but the dice location is random, i.e., there is no way to hardcode the dice to be directly picked up. Then the robot moves so that the rolled dice is in frame. It takes a few seconds to read the dice and locate the dice. Then it determines its location and picks up the dice
 
 To pick up the dice, we use a controller. 
 
@@ -151,6 +151,6 @@ Our implementation uses checkpoints which are configurations for the sawyer bot 
 ### Contributions: 
 - Adan Lopez Calderon: ...
 - Noe Trejo-Cruz: ... 
-- Khanh Pham: ... 
+- Khanh Pham: coded the vision part to detect the dice and count the number of dots. He also helped with writing the controller and testing the Sawyer arm with pickup up the dice.
 - Angela Gao: ... 
 
